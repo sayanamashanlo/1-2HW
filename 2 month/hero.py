@@ -13,14 +13,14 @@ class SuperHero:
         print(f" HERO NAME:{self.name}")
 
     def double_health(self):
-        self.heath_points *= 2
+        self.health_points *= 2
 
     def __str__(self):
         return f"NICKNAME: {self.nickname}, SUPERPOWER: {self.superpower}, HEALTH POINTS: {self.health_points}"
     def __len__(self):
         return len(self.catchphrase)
 
-Hero=SuperHero("Tony Starck', 'Iron Man', 'гений, миллиардер, плэйбой, филантроп', '99', 'I am IRON MAN")
+Hero=SuperHero('Tony Starck', 'Iron Man', 'гений, миллиардер, плэйбой, филантроп', '99', 'I am IRON MAN')
 
 Hero.double_health()
 Hero.display_name()
